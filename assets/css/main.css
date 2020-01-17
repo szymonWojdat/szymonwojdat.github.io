@@ -111,7 +111,7 @@
 
 	body {
 		height: 100%;
-		background-color: #45ffca;
+		background-color: #669966;
 	}
 
 		body:after {
@@ -124,7 +124,7 @@
 			height: inherit;
 			opacity: 0;
 			z-index: 1;
-			background-color: #ffffff;
+			background-color: #ffffcc;
 			-moz-transition: opacity 1.75s ease-out;
 			-webkit-transition: opacity 1.75s ease-out;
 			-ms-transition: opacity 1.75s ease-out;
@@ -390,7 +390,7 @@
 
 		select option {
 			color: #313f47;
-			background: #ffffff;
+			background: #ffffcc;
 		}
 
 		select:focus::-ms-value {
@@ -874,7 +874,7 @@
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
 		padding: 4.5em 3em 3em 3em ;
-		background: #ffffff;
+		background: #ffffcc;
 		border-radius: 4px;
 		cursor: default;
 		max-width: 100%;
@@ -894,7 +894,6 @@
 				display: block;
 				margin: 0 auto;
 				border-radius: 100%;
-				box-shadow: 0 0 0 1.5em #ffffff;
 			}
 
 			#main .avatar:before {
