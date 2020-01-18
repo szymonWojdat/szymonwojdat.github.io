@@ -1020,22 +1020,19 @@
 			font-family: 'Nunito', sans-serif;
 		}
 
-		.home-title {
-			margin-bottom: 3vh;
+		.home-title, .home-link {
+			display: inline-block;
 		}
 
 		.home-title:hover, .home-link:hover {
 			color: #ff7496;
 			cursor: pointer;
+			transition: color 1s;
 		}
 
 		.free-text {
 			text-align: left;
-		}
-
-		.main-table-column-left, .main-table-column-right {
-			padding-left: 2vw;
-			padding-right: 2vw;
+			transition: all 3s;
 		}
 
 		.main-table-column-left {
@@ -1043,5 +1040,6 @@
 		}
 
 		.main-table-column-right {
+			display: none;
 			width: 35vw;
 		}
