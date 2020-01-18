@@ -1032,14 +1032,17 @@
 
 		.free-text {
 			text-align: left;
-			transition: all 3s;
+            line-height: 1.5em;
+            font-size: 1.0em;
 		}
 
 		.main-table-column-left {
 			width: 25vw;
+            vertical-align: middle;
 		}
 
 		.main-table-column-right {
 			display: none;
 			width: 35vw;
+            vertical-align: middle;
 		}

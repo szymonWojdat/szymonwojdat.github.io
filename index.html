@@ -32,7 +32,7 @@
 							onclick="transitionView()"
 							class="home-link"
 						>
-							<h2>about</h2>
+							<h2>about me</h2>
 						</a>
 						<br>
 						<a href="https://github.com/szymonWojdat" target="_blank" class="home-link">
@@ -49,8 +49,14 @@
 					</td>
 					<td class="main-table-column-right" id="bio">
 						<div class="free-text">
-							<p>
-								I'm a software engineer interested in artificial intelligence. This site is still work-in-progress :)
+                            <p>
+                                I'm a software developer based in Warsaw, Poland. My main interests include web development and machine learning. I'm mostly a Python programmer though I'm open for all new technologies.
+                                <br><br>Technologies I have worked with (so far) are:
+                                <br>- backend: Python, Django, Django REST Framework
+                                <br>- frontend: Javascript, HTML, CSS, VueJS, npm, ReactJS
+                                <br>- infra/databases: Google Cloud Platform, Docker, PosgreSQL, MySQL, SQLite, Sybase
+                                <br>- machine learning: Numpy, Tensorflow, Keras, scikit-learn, Gym
+                                <br>- VCS and other: Git, CVS, SVN, Jira, Confluence, Github, Gitlab, Linux, Mac OS X, Windows
 							</p>
 						</div>
 					</td>
@@ -80,7 +86,6 @@
 	const transitionView = function () {
 		const bioSection = document.getElementById('bio');
 		const isHidden = bioSection.style.display !== 'block';
-		console.log(isHidden);
 		if (isHidden) {
 			bioSection.style.display = 'block';
 		} else {
