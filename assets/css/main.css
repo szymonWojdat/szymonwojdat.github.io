@@ -1026,4 +1026,22 @@
 
 		.home-title:hover, .home-link:hover {
 			color: #ff7496;
+			cursor: pointer;
+		}
+
+		.free-text {
+			text-align: left;
+		}
+
+		.main-table-column-left, .main-table-column-right {
+			padding-left: 2vw;
+			padding-right: 2vw;
+		}
+
+		.main-table-column-left {
+			width: 25vw;
+		}
+
+		.main-table-column-right {
+			width: 35vw;
 		}

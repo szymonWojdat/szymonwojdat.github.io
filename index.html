@@ -17,11 +17,30 @@
 	<!-- Wrapper -->
 	<div id="wrapper">
 		<section id="home">
-			<a href="." class="home-title"><h1>szymon wojdat</h1></a>
-			<a href="about.html" class="home-link"><h2>about</h2></a>
-			<a href="https://github.com/szymonWojdat" target="_blank" class="home-link"><h2>github</h2></a>
-			<a href="https://blog.szymonwojdat.com" target="_blank" class="home-link"><h2>blog</h2></a>
-			<a href="https://www.linkedin.com/in/szymon-wojdat-54184013b/" target="_blank" class="home-link"><h2>linkedin</h2></a>
+			<table>
+				<tr>
+					<td class="main-table-column-left">
+						<a href="." class="home-title"><h1>szymon wojdat</h1></a>
+						<a
+							onclick="document.getElementById('bio').hidden = !document.getElementById('bio').hidden"
+							class="home-link"
+						>
+							<h2>about</h2>
+						</a>
+						<a href="https://github.com/szymonWojdat" target="_blank" class="home-link"><h2>github</h2></a>
+						<a href="https://blog.szymonwojdat.com" target="_blank" class="home-link"><h2>blog</h2></a>
+						<a href="https://www.linkedin.com/in/szymon-wojdat-54184013b/" target="_blank" class="home-link"><h2>linkedin</h2></a>
+					</td>
+					<td class="main-table-column-right" id="bio" hidden>
+						<div class="free-text">
+							<p>
+								I'm a software engineer interested in artificial intelligence. This site is still work-in-progress :)
+							</p>
+						</div>
+					</td>
+				</tr>
+			</table>
+
 		</section>
 
 		<!-- Footer -->
