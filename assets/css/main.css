@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300");
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 /*
 	Identity by HTML5 UP
@@ -144,7 +145,7 @@
 		font-weight: 300;
 		line-height: 2;
 		letter-spacing: 0.2em;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -197,7 +198,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #313f47;
+		/*color: #313f47;*/
 		line-height: 1.5;
 		margin: 0 0 0.75em 0;
 	}
@@ -1011,4 +1012,18 @@
 
 		body.is-ie #wrapper {
 			height: 100%;
+		}
+
+		#home {
+			text-align: center;
+			color: white;
+			font-family: 'Nunito', sans-serif;
+		}
+
+		.home-title {
+			margin-bottom: 3vh;
+		}
+
+		.home-title:hover, .home-link:hover {
+			color: #ff7496;
 		}
