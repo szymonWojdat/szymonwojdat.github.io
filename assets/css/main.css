@@ -26,9 +26,22 @@ h2 {
 	font-size: 28pt;
 }
 
-ul, li, ul > li {
+.section {
+	margin: auto;
+}
+
+.section-header {
+	cursor: pointer;
+	margin-bottom: 0.4em;
+}
+
+a {
+	color: inherit;
+}
+
+.section > div, ul, li, ul > li {
 	font-weight: bold;
-	text-align: justify;
+	text-align: left;
 	line-height: 1.5em;
 	font-size: 16pt;
 	width: auto;
@@ -56,18 +69,8 @@ ul.dashed > li:before {
 	margin-left: -1.3em;
 }
 
-.section {
-	margin: auto;
-}
-
-.section > div {
-	font-weight: bold;
-	font-size: 16pt;
-}
-
-.section > h2 {
-	cursor: pointer;
-	margin-bottom: 0.4em;
+#p-contact {
+	text-align: center;
 }
 
 @media (min-width: 1200px) {
