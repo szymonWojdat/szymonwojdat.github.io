@@ -1,95 +1,50 @@
 <!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html lang="en">
 	<head>
 		<title>Szymon Wojdat</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
-
-	<!-- Wrapper -->
-	<div id="wrapper">
-		<section id="home">
-			<table>
-				<tr>
-					<td class="main-table-column-left">
-						<a
-								href="."
-								id="home-title"
-								class="home-title"
-						>
-							<h1>szymon wojdat</h1>
-						</a>
-						<br>
-						<a
-							onclick="transitionView()"
-							class="home-link"
-						>
-							<h2>about me</h2>
-						</a>
-						<br>
-						<a href="https://github.com/szymonWojdat" target="_blank" class="home-link">
-							<h2>github</h2>
-						</a>
-						<br>
-						<a href="https://blog.szymonwojdat.com" target="_blank" class="home-link">
-							<h2>blog</h2>
-						</a>
-						<br>
-						<a href="https://www.linkedin.com/in/szymon-wojdat-54184013b/" target="_blank" class="home-link">
-							<h2>linkedin</h2>
-						</a>
-					</td>
-					<td class="main-table-column-right" id="bio">
-						<div class="free-text">
-                            <p>
-                                I'm a software developer based in Warsaw, Poland. My main interests include web development and machine learning. I'm mostly a Python programmer though I'm open for all new technologies.
-                                <br><br>Technologies I have worked with (so far) are:
-                                <br>- backend: Python, Django, Django REST Framework
-                                <br>- frontend: Javascript, HTML, CSS, VueJS, npm, ReactJS
-                                <br>- infra/databases: Google Cloud Platform, Docker, PosgreSQL, MySQL, SQLite, Sybase
-                                <br>- machine learning: Numpy, Tensorflow, Keras, scikit-learn, Gym
-                                <br>- VCS and other: Git, CVS, SVN, Jira, Confluence, Github, Gitlab, Linux, Mac OS X, Windows
-							</p>
-						</div>
-					</td>
-				</tr>
-			</table>
-
-		</section>
-
-		<!-- Footer -->
-		<footer id="footer">
-		</footer>
-
+	<body>
+		<div class="container" style="text-align: center">
+			<h1 style="color: #2FBDD6">szymon wojdat</h1>
+			<div style="color: #CA71DE" id="about" class="section">
+				<h2 id="h-about">about me</h2>
+				<div id="p-about" hidden>
+					<ul class="dashed">
+						<li>full-stack engineer with 5 yoe</li>
+						<li>frontend and data processing for 2 years at goldman sachs</li>
+						<li>managed and scaled engineering at saventic (early-stage polish med-tech startup) for another 2 years</li>
+						<li>generalist, loves building things, gets things done</li>
+						<li>currently open for client work</li>
+					</ul>
+				</div>
+			</div>
+			<div style="color: #16B89A" id="stack" class="section">
+				<h2 id="h-stack">my stack</h2>
+				<div id="p-stack" hidden>
+					<ul class="dashed">
+						<li>backend: python + django</li>
+						<li>frontend: react/vue + typescript</li>
+						<li>cloud: google cloud, heroku</li>
+						<li>data: pandas, numpy, sklearn</li>
+					</ul>
+				</div>
+			</div>
+			<div style="color: #A68D1F" id="contact" class="section">
+				<h2 id="h-contact">contact</h2>
+				<div id="p-contact" hidden>
+					szymonwojdat13 {at} gmail {dot} com
+				</div>
+			</div>
 		</div>
-
-		<!-- Scripts -->
-		<script>
-			if ('addEventListener' in window) {
-				window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-				document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-			}
-		</script>
-
 	</body>
+	<script>
+		const sections = [...document.getElementsByClassName('section')].map(el => el.id)
+		sections.forEach(section => {
+			document.getElementById(`h-${section}`).onclick = () => {
+				document.getElementById(`p-${section}`).hidden = !document.getElementById(`p-${section}`).hidden
+			}
+		})
+	</script>
 </html>
-
-<script>
-	const transitionView = function () {
-		const bioSection = document.getElementById('bio');
-		const isHidden = bioSection.style.display !== 'block';
-		if (isHidden) {
-			bioSection.style.display = 'block';
-		} else {
-			bioSection.style.display = 'none';
-		}
-	}
-</script>
