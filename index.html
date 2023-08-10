@@ -7,33 +7,32 @@
 	</head>
 	<body>
 		<div class="container" style="text-align: center">
-			<h1 style="color: #2FBDD6">szymon wojdat</h1>
-			<div style="color: #CA71DE" id="about" class="section">
+			<h1>szymon wojdat</h1>
+			<div id="about" class="section">
 				<h2 id="h-about" class="section-header">about me</h2>
 				<div id="p-about" hidden>
 					<ul class="dashed">
-						<li>full-stack engineer with 5 yoe</li>
+						<li>full-stack engineer with 6 yoe</li>
 						<li>2017-19 @ goldman sachs - frontend and ETL</li>
 						<li>2019-21 @ saventic - managed and scaled engineering (early-stage polish startup)</li>
 						<li>2021-now @ freelance</li>
 						<li>generalist, fast learner. loves building things, gets stuff done</li>
-						<li>currently open for client work</li>
 					</ul>
 				</div>
 			</div>
-			<div style="color: #16B89A" id="stack" class="section">
+			<div id="stack" class="section">
 				<h2 id="h-stack" class="section-header">my stack</h2>
 				<div id="p-stack" hidden>
 					<ul class="dashed">
 						<li>backend: python + django, node</li>
-						<li>frontend: react/vue + js/typescript</li>
+						<li>frontend: svelte/react + js/typescript</li>
 						<li>db: postgres, firebase</li>
-						<li>cloud: google cloud, heroku</li>
+						<li>cloud: google cloud, supabase, vercel, heroku</li>
 						<li>data: pandas, numpy, sklearn</li>
 					</ul>
 				</div>
 			</div>
-			<div style="color: #A68D1F" id="contact" class="section">
+			<div id="contact" class="section">
 				<h2 id="h-contact" class="section-header">contact</h2>
 				<div id="p-contact" hidden>
 					szymonwojdat13 {at} gmail {dot} com
@@ -41,6 +40,8 @@
 					<a href="https://www.linkedin.com/in/szymon-wojdat-54184013b/" target="_blank">linkedin</a>
 					<br>
 					<a href="https://github.com/szymonWojdat/" target="_blank">github</a>
+					<br>
+					<a href="https://twitter.com/szymonwojdat" target="_blank">twitter</a>
 				</div>
 			</div>
 		</div>
@@ -50,6 +51,20 @@
 		sections.forEach(section => {
 			document.getElementById(`h-${section}`).onclick = () => {
 				document.getElementById(`p-${section}`).hidden = !document.getElementById(`p-${section}`).hidden
+			}
+		})
+
+		const colors = [
+			'#55d6c2',
+			'#f8b500',
+			'#ff5d5d',
+			'#00b7ff',
+		];
+		// each h1 on click change to random color but not the same as before
+		const h1s = [...document.getElementsByTagName('h1')]
+		h1s.forEach(h1 => {
+			h1.onclick = () => {
+				h1.style.color = colors[Math.floor(Math.random() * colors.length)];
 			}
 		})
 	</script>

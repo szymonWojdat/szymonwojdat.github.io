@@ -1,7 +1,26 @@
 * {
 	font-family: 'Courier New', sans-serif;
-	background-color: #fdf8e1;
+	background-color: #1f1f23;
+	color: #f8f8f8;
 }
+
+h1 {
+	color: #55d6c2;
+	cursor: pointer;
+}
+
+h2 {
+	color: #c792ea;
+	user-select: none;
+}
+h2:hover {
+	color: #f8f8f8;
+}
+
+*::selection {
+	background: #c792ea;
+}
+
 
 html {
 	height: 100%;
